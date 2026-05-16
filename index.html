@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 - Uriel Cruz</title>
+    <title>WDD131 - Dynamic Web Fundamentals - Uriel Cruz</title>
+    <meta name="description" content="This is the index page for WDD131 - Dynamic Web Fundamentals - Uriel Cruz.">
+    <meta name="author" content="Uriel Cruz">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>WDD131 - Uriel Cruz</h1>
+    <header>
+        <span id="course-title">WDD131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/urielcruzrosas">LinkedIn</a></li>
+                <li><a href=" https://byupw.instructure.com/">I-Learn</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=p45#p45">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Uriel Cruz</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/personal-pic.webp" alt="Uriel Cruz" class="profile-pic" loading="lazy">
+            <p>I am a passionate full stack developer student. I was born in Mexico. I am currently seeking for
+                opportunities to work in IT. I love reading, exercising and meeting people</p>
+            <h3 class="xalapa-title">Xalapa, Veracruz. Mexico</h3>
+            <figure class="city-pic">
+                <img src="images/xalapa-city.webp" alt="Xalapa, Veracruz" loading="lazy">
+                <figcaption>Xalapa is also called the "City of the Flowers"</figcaption>
+            </figure>
+            <p>Welcome to Xalapa, the "Athens of Veracruz," where every misty cobblestone alleyway pulses with the
+                vibrant, intellectual energy of Mexico’s premier university hometown. As a prestigious cultural
+                powerhouse, the city harmonizes the echoes of the world-class Xalapa Symphony Orchestra with a bohemian
+                student spirit that fills every alleys.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <p>Here are some useful resources for web development:</p>
+            <h3>Learning</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                        rel="noopener noreferrer">MDN Web Docs</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>
+                </li>
+                <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+            </ul>
+            <h3>For designing</h3>
+            <ul>
+                <li><a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS Tricks and docs</a>
+                </li>
+                <li><a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">Prepare your own palette of
+                        colors</a></li>
+                <li><a href="https://cssgrid-generator.netlify.app/" target="_blank" rel="noopener noreferrer">Grid
+                        Generator!</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"> | </span> Uriel Cruz | Xalapa, Veracruz.</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
 </body>
+
 </html>

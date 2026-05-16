@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: "Roboto", sans-serif;
+    --font-title: "Stack Sans Headline", serif;
+}
+
+:root {
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 700;
+}
+
+:root {
+
+    /* Colores principales */
+    --color-primary: #303e67;
+    --color-secondary: salmon;
+    --text-color: #f7ebe8;
+    --main-bars: #1e1e24;
+    --nav-color: #9daec3;
+    --footer-color: #1f2937;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: #f0f0f0; /* Un gris muy clarito como pintura general */
+    color: #333; /* Letras oscuras para que se lean sobre el fondo claro */
+}
+
+header {
+    background-color: var(--color-primary); /* Movemos el azul aquí */
+    color: var(--text-color);
+
+}
+
+header #course-title {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: var(--font-title);
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+/* Navigation bar */
+nav {
+    padding: 20px;
+    background-color: var(--nav-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: var(--font-bold);
+    font-size: var(--font-size);
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--color-primary);
+    
+}
+
+/* Main content */
+main {
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-rows: 10% auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    display: block;
+    font-family: var(--font-title);
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 3;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #c0c0c0; 
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; 
+    padding-bottom: 20px;
+}
+
+.card h2 {
+    background-color: var(--color-primary); 
+    color: var(--text-color); 
+    margin: 0; 
+    padding: 10px; 
+    text-align: center;
+}
+
+.card p, 
+.card ul, 
+.card h3, 
+.card h4, 
+.card h5 {
+    padding: 0 15px; 
+}
+
+main img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.profile-pic {
+    float: right; 
+    width: 200px;
+    margin: 15px;
+}
+
+
+.city-pic {
+    float: left; 
+    width: 250px; 
+    margin: 15px;
+}
+
+.city-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.city-pic figcaption {
+    text-align: center;
+    font-size: 0.8rem; 
+    font-style: italic; 
+    margin-top: 5px;
+}
+
+.card ul {
+    padding-left: 35px; 
+}
+
+.card li {
+    margin-bottom: 10px; 
+}
+
+.xalapa-title {
+    text-align: center; 
+    border-bottom: 1px solid #c0c0c0; 
+    padding-bottom: 10px; 
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    margin-right: 240px; 
+    margin-left: 40px;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: yellow;
+}
