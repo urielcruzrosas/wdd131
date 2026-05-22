@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A list of temples around the world.">
+    <meta name="author" content="Uriel Cruz"> 
+    
+    <link rel="stylesheet" href="styles/temple.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span>Temple Album</span>
+            <button id="menu" aria-label="Open Navigation"></button>
+        </div>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Home</h1>
+        <div class="grid-container">
+            <figure>
+                <img src="https://www.robertaboyd.com/images/thumbs/0004640_san-diego-temple-a-house-of-peace_625.jpeg" alt="San Diego California Temple" width="400" height="250">
+                <figcaption>San Diego, California</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.robertaboyd.com/images/thumbs/0003329_las-vegas-covenant-path.jpeg" width="400" height="250">
+                <figcaption>Las Vegas, Nevada</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.robertaboyd.com/images/thumbs/0001538_albuquerque-temple-sunrise.jpeg" alt="Albuquerque New Mexico Temple" width="400" height="250">
+                <figcaption>Albuquerque, New Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.robertaboyd.com/images/thumbs/0001743_bountiful-temple-fall-mountain.jpeg" alt="Bountiful Utah Temple" width="400" height="250">
+                <figcaption>Bountiful, Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.churchofjesuschrist.org/imgs/7cf8e8b9e5a5a1f379d4e2c9bc2166f9c6007aca/full/640%2C/0/default" alt="San Diego California Temple" width="400" height="250">
+                <figcaption>Accra, Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple-thumb.jpg" alt="San Diego California Temple" width="400" height="250">
+                <figcaption>Chile, Santiago</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.churchofjesuschrist.org/imgs/7912c0516d806e53855863d40d426412ca2e5836/full/640%2C/0/default" alt="San Diego California Temple" width="400" height="250">
+                <figcaption>Veracruz, Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="https://www.churchofjesuschrist.org/imgs/mcitc2ylqferpx3mz7u0skjtjki6ui8ptvsdizut/full/640%2C/0/default" alt="San Diego California Temple" width="400" height="250">
+                <figcaption>Culiacan, Mexico</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Uriel Cruz | Xalapa, Veracruz.</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>
