@@ -15,12 +15,13 @@
         display: none;
     }
 
-    .navigation {
-        display: flex;
-        flex-direction: row;
+    nav {
+        display: flex; 
+        flex-direction: row; 
     }
 
-    .navigation a {
+    nav a {
+        display: block; 
         padding: 1.5rem 1rem;
         font-size: 1.1rem;
     }

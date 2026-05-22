@@ -54,18 +54,14 @@ header {
     content: "✖";
 }
 
-.navigation {
-    display: none;
+nav {
+    display: flex; 
     flex-direction: column;
     background-color: var(--primary-color);
 }
 
-.navigation.open {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
+nav a {
+    display: none; 
     color: var(--text-light);
     text-align: center;
     padding: 1rem;
@@ -73,8 +69,12 @@ header {
     font-size: 1.2rem;
 }
 
-.navigation a:hover,
-.navigation a.active {
+nav.open a {
+    display: block;
+}
+
+nav a:hover, 
+nav a.active {
     background-color: var(--nav-hover-color);
 }
 
