@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Chile</title>
+    <meta name="description" content="Santiago, Chile is a vibrant city nestled between the Andes mountains and the Pacific Ocean. It offers a blend of modernity and culture, with attractions like Plaza de Armas, Cerro San Cristobal, and the historic Bellavista neighborhood. Visitors can explore museums, enjoy local cuisine, and experience the city's lively atmosphere." />
+    <meta name="author" content="Uriel Cruz" />
+    <link rel="stylesheet" href="/styles/place-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Santiago, Chile</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="/images/Santiago.webp">
+                <img src="/images/Santiago.webp" alt="Santiago landscape" width="1200" height="800">
+            </picture>
+        </div>
+
+        <div class="info-container">
+            <section class="card data-card">
+                <div class="card-header">
+                    <h2>Data</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="data-list">
+                        <li><strong>Area:</strong> 15,403 sq km</li>
+                        <li><strong>Population:</strong> 7,112,808</li>
+                        <li><strong>Capital:</strong> Santiago</li>
+                        <li><strong>Languages:</strong> Spanish</li>
+                        <li><strong>Currency:</strong> Chilean Peso (CLP)</li>
+                        <li><strong>Time Zone:</strong> UTC-4</li>
+                        <li><strong>Calling Code:</strong> +56</li>
+                        <li><strong>Internet TLD:</strong> .cl</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="card weather-card">
+                <div class="card-header">
+                    <h2>Weather</h2>
+                </div>
+                <div class="weather-icon-mobile">
+                    <img src="/images/weather-icon.webp" alt="Weather icon" width="80" height="80">
+                </div>
+                <div class="card-body">
+                    <ul class="data-list">
+                        <li><strong>Temperature:</strong> 15 °C</li>
+                        <li><strong>Conditions:</strong> Partly Cloudy</li>
+                        <li><strong>Wind:</strong> 10 km/h</li>
+                        <li><strong>Wind Chill:</strong> 13 °C</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear">2024</span> 🌸 Uriel Cruz 🌸 Santiago, Chile</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    <script src="/scripts/place-scripts.js"></script>    
+</body>
+</html>
