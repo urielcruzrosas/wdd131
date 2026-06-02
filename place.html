@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Chile</title>
-    <meta name="description" content="Santiago, Chile is a vibrant city nestled between the Andes mountains and the Pacific Ocean. It offers a blend of modernity and culture, with attractions like Plaza de Armas, Cerro San Cristobal, and the historic Bellavista neighborhood. Visitors can explore museums, enjoy local cuisine, and experience the city's lively atmosphere." />
+    <meta name="description"
+        content="Santiago, Chile is a vibrant city nestled between the Andes mountains and the Pacific Ocean." />
     <meta name="author" content="Uriel Cruz" />
     <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +24,12 @@
     <main>
         <div class="hero">
             <picture>
-                <source media="(min-width: 768px)" srcset="/images/Santiago.webp">
-                <img src="/images/Santiago.webp" alt="Santiago landscape" width="1200" height="800">
+                <source media="(min-width: 1000px)" srcset="/images/santiago-large.webp">
+
+                <source media="(min-width: 550px)" srcset="/images/santiago-medium.webp">
+
+                <img src="/images/santiago-small.webp" alt="Paisaje de Santiago, vista frontal" width="400"
+                    height="200">
             </picture>
         </div>
 
@@ -66,9 +72,10 @@
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear">2024</span> 🌸 Uriel Cruz 🌸 Santiago, Chile</p>
+        <p>&copy; <span id="currentYear">2024</span> | Uriel Cruz | Santiago, Chile</p>
         <p id="lastModified">Last Modification: </p>
     </footer>
-    <script src="/scripts/place-scripts.js"></script>    
+    <script src="/scripts/place-scripts.js" defer></script>
 </body>
+
 </html>
